@@ -9,4 +9,5 @@ bich dont judge me
 ds.css is licensed under the MIT license
 
 ---
+[Normalize.css](http://necolas.github.io/normalize.css/) is used in the project.  
 Inspired by [Skeleton.css](http://getskeleton.com/) 
