@@ -1,0 +1,125 @@
+/* Base styles
+ * ====================================
+ */
+
+* {
+    margin: 0;
+}
+
+/* Grid system
+ * ====================================
+ */
+
+.row {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+[class*="col"] {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile columns */
+.col-s-1 {width: 8.3333333%;}
+.col-s-2 {width: 16.6666667%;}
+.col-s-3 {width: 25.0%;}
+.col-s-4 {width: 33.3333333%;}
+.col-s-5 {width: 41.6666667%;}
+.col-s-6 {width: 50.0%;}
+.col-s-7 {width: 58.3333333%;}
+.col-s-8 {width: 66.6666667%;}
+.col-s-9 {width: 75.0%;}
+.col-s-10 {width: 83.3333333%;}
+.col-s-11 {width: 91.6666667%;}
+.col-s-12 {width: 100.0%;}
+
+@media (min-width: 1200px) {
+    /* Desktop columns */
+    .col-1 {width: 8.3333333%;}
+    .col-2 {width: 16.6666667%;}
+    .col-3 {width: 25.0%;}
+    .col-4 {width: 33.3333333%;}
+    .col-5 {width: 41.6666667%;}
+    .col-6 {width: 50.0%;}
+    .col-7 {width: 58.3333333%;}
+    .col-8 {width: 66.6666667%;}
+    .col-9 {width: 75.0%;}
+    .col-10 {width: 83.3333333%;}
+    .col-11 {width: 91.6666667%;}
+    .col-12 {width: 100.0%;}
+}
+
+/* Colors
+ * ====================================
+ * TODO: Change to better colors
+ */
+
+/* Black */
+.c-black {
+    color: black;
+}
+
+.c-black-bg {
+    background-color: black;
+}
+
+/* White */
+.c-white {
+    color: white;
+}
+
+.c-white-bg {
+    background-color: white;
+}
+
+/* Blue */
+.c-blue {
+    color: blue;
+}
+
+.c-blue-bg {
+    background-color: blue;
+}
+
+/* Purple */
+.c-purple {
+    color: purple;
+}
+
+.c-purple-bg {
+    background-color: purple;
+}
+
+/* Yellow */
+.c-yellow {
+    color: yellow
+}
+
+.c-yellow-bg {
+    background-color: yellow;
+}
+
+/* Red */
+.c-red {
+    color: red;
+}
+
+.c-red-bg {
+    background-color: red
+}
+
+/* Green */
+.c-green {
+    color: green;
+}
+
+.c-green-bg {
+    background-color: green;
+}
+
+/* Typography
+ * ====================================
+ */
