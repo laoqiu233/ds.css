@@ -2,15 +2,64 @@
  * ====================================
  */
 
-* {
-    margin: 0;
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+                 'Helvetica Neue', sans-serif, "Microsoft YaHei";
+    color: #222;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 400
+}
+
+/* Typography
+ * ====================================
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 3.6rem;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 3.2rem;
+    line-height: 1.25;
+}
+
+h4 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 2rem;
 }
 
 /* Grid system
  * ====================================
  */
 
-.row {
+.container {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -37,7 +86,7 @@
 .col-s-12 {width: 100.0%;}
 
 @media (min-width: 1200px) {
-    /* Desktop columns */
+    /* Desktop grid */
     .col-1 {width: 8.3333333%;}
     .col-2 {width: 16.6666667%;}
     .col-3 {width: 25.0%;}
@@ -50,76 +99,255 @@
     .col-10 {width: 83.3333333%;}
     .col-11 {width: 91.6666667%;}
     .col-12 {width: 100.0%;}
+
+    .container {
+        width: 80%;
+    }
 }
 
 /* Colors
  * ====================================
- * TODO: Change to better colors
  */
 
 /* Black */
 .c-black {
-    color: black;
+    color: #222;
 }
 
 .c-black-bg {
-    background-color: black;
+    background-color: #222;
 }
 
 /* White */
 .c-white {
-    color: white;
+    color: #fff;
 }
 
 .c-white-bg {
-    background-color: white;
+    background-color: #fff;
+}
+
+/* Gray */
+.c-gray {
+    color: #888;
+}
+
+.c-gray-bg {
+    background-color: #888;
 }
 
 /* Blue */
 .c-blue {
-    color: blue;
+    color: #3c88d7;
 }
 
 .c-blue-bg {
-    background-color: blue;
+    background-color: #3c88d7;
 }
 
 /* Purple */
 .c-purple {
-    color: purple;
+    color: #a04daf;
 }
 
 .c-purple-bg {
-    background-color: purple;
+    background-color: #a04daf;
 }
 
 /* Yellow */
 .c-yellow {
-    color: yellow
+    color: #ffcf39;
 }
 
 .c-yellow-bg {
-    background-color: yellow;
+    background-color: #ffcf39;
 }
 
 /* Red */
 .c-red {
-    color: red;
+    color: #fa5b4a;
 }
 
 .c-red-bg {
-    background-color: red
+    background-color: #fa5b4a;
 }
 
 /* Green */
 .c-green {
-    color: green;
+    color: #78f758;
 }
 
 .c-green-bg {
-    background-color: green;
+    background-color: #78f758;
 }
 
-/* Typography
+/* Inputs
  * ====================================
  */
+
+/* Buttons */
+button {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    height: 38px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background: none;
+    color: #555;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    box-sizing: border-box;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #777;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Colored buttons */
+
+/* Black */
+button.c-black {
+    border-color: #222;
+}
+
+button.c-black:hover {
+    color: #666;
+    border-color: #666;
+}
+
+button.c-black.button-filled {
+    color: #ddd;
+    background-color: #222;
+}
+
+button.c-black.button-filled:hover {
+    background-color: #666;
+}
+
+/* White */
+button.c-white {
+    color: #fff;
+}
+
+button.c-white:hover {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+button.c-white.button-filled {
+    color: #222;
+    background-color: #fff;
+}
+
+button.c-white.button-filled:hover {
+    background-color: #ccc;
+}
+
+/* Blue */
+button.c-blue {
+    border-color: #3c88d7;
+}
+
+button.c-blue:hover {
+    color: #66a5e9;
+    border-color: #66a5e9;
+}
+
+button.c-blue.button-filled {
+    color: #fff;
+    background-color: #3c88d7;
+}
+
+button.c-blue.button-filled:hover {
+    background-color: #66a5e9;
+}
+
+/* Purple */
+button.c-purple {
+    border-color: #a04daf;
+}
+
+button.c-purple:hover {
+    color: #c672d4;
+    border-color: #c672d4;
+}
+
+button.c-purple.button-filled {
+    color: #fff;
+    background-color: #a04daf;
+}
+
+button.c-purple.button-filled:hover {
+    background-color: #c672d4;
+}
+
+/* Yellow */
+button.c-yellow {
+    border-color: #ffcf39;
+}
+
+button.c-yellow:hover {
+    color: #ffe28a;
+    border-color: #ffe28a;
+}
+
+button.c-yellow.button-filled {
+    color: #222;
+    background-color: #ffcf39;
+}
+
+button.c-yellow.button-filled:hover {
+    background-color: #ffe28a;
+}
+
+/* Red */
+button.c-red {
+    border-color: #fa5b4a
+}
+
+button.c-red:hover {
+    color: #ff6f5f;
+    border-color: #ff6f5f;
+}
+
+button.c-red.button-filled {
+    color: #fff;
+    background-color: #fa5b4a;
+}
+
+button.c-red.button-filled:hover {
+    background-color: #ff6f5f;
+}
+
+/* Green */
+button.c-green {
+    border-color: #78f758;
+}
+
+button.c-green:hover {
+    color: #a2fc8c;
+    border-color: #a2fc8c;
+}
+
+button.c-green.button-filled {
+    color: #222;
+    background-color: #78f758;
+}
+
+button.c-green.button-filled:hover {
+    background-color: #a2fc8c;
+}
+
+/* Utilities
+ * ====================================
+ */
+
+.u-full-height {
+    height: 100vh;
+}
