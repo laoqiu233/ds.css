@@ -193,7 +193,7 @@ button {
     border: 1px solid #bbb;
     border-radius: 6px;
     background: none;
-    color: #555;
+    color: #777;
     font-weight: 700;
     letter-spacing: 0.1rem;
     box-sizing: border-box;
@@ -203,6 +203,15 @@ button {
 
 button:hover {
     border-color: #777;
+}
+
+button.button-filled {
+    color: #fff;
+    background-color: #bbb
+}
+
+button.button-filled:hover {
+    background-color: #777;
 }
 
 button:focus {
