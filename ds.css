@@ -243,6 +243,7 @@ button.c-black.button-filled:hover {
 /* White */
 button.c-white {
     color: #fff;
+    border-color: #fff;
 }
 
 button.c-white:hover {
