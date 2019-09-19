@@ -1,6 +1,5 @@
 /* TODO:
  *  - Get better colors
- *  - Tick boxes
  */
 
 /* Base styles
@@ -508,9 +507,10 @@ input[type="password"],
 input[type="search"],
 input[type="tel"],
 input[type="url"],
-textarea {
+textarea,
+select {
     border: 1px solid #bbb;
-    border-radius: 6px;
+    border-radius: 5px;
     padding: 10px 15px;  
 
     box-sizing: border-box;
@@ -523,7 +523,8 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     border-color: #777;
 }
 
@@ -537,7 +538,8 @@ input[type="password"].c-black,
 input[type="search"].c-black,
 input[type="tel"].c-black,
 input[type="url"].c-black,
-textarea.c-black {
+textarea.c-black,
+select.c-black {
     border-color: #222;
 }
 
@@ -547,7 +549,8 @@ input[type="password"].c-black:focus,
 input[type="search"].c-black:focus,
 input[type="tel"].c-black:focus,
 input[type="url"].c-black:focus,
-textarea.c-black:focus {
+textarea.c-black:focus,
+select.c-black:focus {
     border-color: #666;
 }
 
@@ -559,7 +562,8 @@ input[type="password"].c-white,
 input[type="search"].c-white,
 input[type="tel"].c-white,
 input[type="url"].c-white,
-textarea.c-white {
+textarea.c-white,
+select.c-white {
     border-color: #fff;
 }
 
@@ -569,7 +573,8 @@ input[type="password"].c-white:focus,
 input[type="search"].c-white:focus,
 input[type="tel"].c-white:focus,
 input[type="url"].c-white:focus,
-textarea.c-white:focus {
+textarea.c-white:focus,
+select.c-white:focus {
     border-color: #ccc;
 }
 
@@ -581,7 +586,8 @@ input[type="password"].c-blue,
 input[type="search"].c-blue,
 input[type="tel"].c-blue,
 input[type="url"].c-blue,
-textarea.c-blue {
+textarea.c-blue,
+select.c-blue {
     border-color: #3c88d7;
 }
 
@@ -591,7 +597,8 @@ input[type="password"].c-blue:focus,
 input[type="search"].c-blue:focus,
 input[type="tel"].c-blue:focus,
 input[type="url"].c-blue:focus,
-textarea.c-blue:focus {
+textarea.c-blue:focus,
+select.c-blue:focus {
     border-color: #66a5e9;
 }
 
@@ -603,7 +610,8 @@ input[type="password"].c-purple,
 input[type="search"].c-purple,
 input[type="tel"].c-purple,
 input[type="url"].c-purple,
-textarea.c-purple {
+textarea.c-purple,
+select.c-purple {
     border-color: #a04daf;
 }
 
@@ -613,7 +621,8 @@ input[type="password"].c-purple:focus,
 input[type="search"].c-purple:focus,
 input[type="tel"].c-purple:focus,
 input[type="url"].c-purple:focus,
-textarea.c-purple:focus {
+textarea.c-purple:focus,
+select.c-purple:focus {
     border-color: #c672d4;
 }
 
@@ -623,7 +632,8 @@ input[type="password"].c-yellow,
 input[type="search"].c-yellow,
 input[type="tel"].c-yellow,
 input[type="url"].c-yellow,
-textarea.c-yellow {
+textarea.c-yellow,
+select.c-yellow {
     border-color: #ffcf39;
 }
 
@@ -633,7 +643,8 @@ input[type="password"].c-yellow:focus,
 input[type="search"].c-yellow:focus,
 input[type="tel"].c-yellow:focus,
 input[type="url"].c-yellow:focus,
-textarea.c-yellow:focus {
+textarea.c-yellow:focus,
+select.c-yellow:focus {
     border-color: #ffe28a;
 }
 
@@ -644,7 +655,8 @@ input[type="password"].c-red,
 input[type="search"].c-red,
 input[type="tel"].c-red,
 input[type="url"].c-red,
-textarea.c-red {
+textarea.c-red,
+select.c-red {
     border-color: #fa5b4a;
 }
 
@@ -654,7 +666,8 @@ input[type="password"].c-red:focus,
 input[type="search"].c-red:focus,
 input[type="tel"].c-red:focus,
 input[type="url"].c-red:focus,
-textarea.c-red:focus {
+textarea.c-red:focus,
+select.c-red:focus {
     border-color: #ff6f5f;
 }
 
@@ -664,7 +677,8 @@ input[type="password"].c-green,
 input[type="search"].c-green,
 input[type="tel"].c-green,
 input[type="url"].c-green,
-textarea.c-green {
+textarea.c-green,
+select.c-green {
     border-color: #78f758;
 }
 
@@ -674,7 +688,8 @@ input[type="password"].c-green:focus,
 input[type="search"].c-green:focus,
 input[type="tel"].c-green:focus,
 input[type="url"].c-green:focus,
-textarea.c-green:focus {
+textarea.c-green:focus,
+select.c-green:focus {
     border-color: #a2fc8c;
 }
 
