@@ -1,5 +1,7 @@
 /* TODO:
  *  - Get better colors
+ *  - Tables
+ *  - Text areas
  */
 
 /* Base styles
@@ -195,7 +197,7 @@ h6 {
     color: #222;
 }
 
-/* Inputs
+/* Forms
  * ====================================
  */
 
@@ -691,6 +693,27 @@ input[type="url"].c-green:focus,
 textarea.c-green:focus,
 select.c-green:focus {
     border-color: #a2fc8c;
+}
+
+/* Table
+ * ====================================
+ */
+
+table {
+    border-radius: 6px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border-bottom: 1px solid #CCC;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    border-bottom-color: #999;
+    font-weight: normal;
 }
 
 /* Utilities
