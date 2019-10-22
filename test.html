@@ -154,7 +154,20 @@
                     <td>Cat</td>
                     <td>Female</td>
                 </tr>
-            </table>    
+            </table> 
+            <pre><code>from sys import stdin
+brackets = stdin.readline().strip()
+max_len, count = 0, 1
+indexes = []
+for index, char in enumerate(brackets):
+    if char == '(':
+        indexes.append(index)
+    elif char == ')':
+        if indexes:
+            last = indexes.pop()
+            
+print(max_len, count)</code></pre>
+            <button class="c-purple button-filled">Kitty</button>
         </div>
     </div>
 </body>

@@ -17,7 +17,7 @@ body {
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
                  'Helvetica Neue', sans-serif, 
                  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei"; /* Chinese fonts */
-    color: #222;
+    color: #333;
     font-size: 1.6rem;
     line-height: 1;
     font-weight: 400
@@ -702,6 +702,7 @@ select.c-green:focus {
 table {
     border-radius: 6px;
     border-collapse: collapse;
+    margin: 0 0 20px 0;
 }
 
 td,
@@ -714,6 +715,21 @@ th {
 th {
     border-bottom-color: #999;
     font-weight: normal;
+}
+
+/* Code
+ * ====================================
+ */
+
+pre {
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+    overflow-x: auto;
+    background: #EEE;
+    padding: 10px 20px;
+    border-radius: 6px;
+    white-space: pre-wrap;
 }
 
 /* Utilities
