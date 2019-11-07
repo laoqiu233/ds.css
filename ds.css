@@ -1,7 +1,5 @@
 /* TODO:
- *  - Get better colors
- *  - Tables
- *  - Text areas
+ *  - Get better colers please for god's sake
  */
 
 /* Base styles
@@ -29,7 +27,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     font-weight: 300;
 }
 
@@ -251,6 +249,16 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
     outline: none;
+}
+
+/* Rounded button */
+
+button.button-rounded,
+.button.button-rounded,
+input[type="submit"].button-rounded,
+input[type="reset"].button-rounded,
+input[type="button"].button-rounded {
+    border-radius: 100px;
 }
 
 /* Colored buttons */
@@ -512,8 +520,9 @@ input[type="url"],
 textarea,
 select {
     border: 1px solid #bbb;
-    border-radius: 5px;
-    padding: 10px 15px;  
+    border-radius: 4px;
+    padding: 8px 10px; 
+    margin-bottom: 20px;
 
     box-sizing: border-box;
     transition: 0.15s;
@@ -695,6 +704,16 @@ select.c-green:focus {
     border-color: #a2fc8c;
 }
 
+/* Labels
+ * ====================================
+ */
+
+label.on-top {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
 /* Table
  * ====================================
  */
@@ -717,9 +736,38 @@ th {
     font-weight: normal;
 }
 
-/* Code
+/* Checkboxes
  * ====================================
  */
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0.5rem 0 0.3rem;
+    font-weight: normal;
+}
+
+/* Misc
+ * ====================================
+ */
+
+/* Hyperlink */
+
+a {
+    color: #3c88d7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66a5e9;
+    text-decoration-line: underline;
+}
+
+/* Code */
 
 pre {
     box-sizing: border-box;
@@ -736,8 +784,29 @@ pre {
  * ====================================
  */
 
-.u-full-height {
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.u-full-vh {
     height: 100vh;
+    display: border-box;
+}
+
+.u-full-width {
+    width: 100%;
+    display: border-box
+}
+
+.u-pull-left {
+    float: left;
+}
+
+.u-pull-right {
+    float: right;
 }
 
 .u-no-bg {
