@@ -1,5 +1,6 @@
 /* TODO:
  *  - Get better colers please for god's sake
+ *  - Organize everything
  */
 
 /* Base styles
@@ -104,6 +105,19 @@ h6 {
     .col-10 {width: 83.3333333%;}
     .col-11 {width: 91.6666667%;}
     .col-12 {width: 100.0%;}
+
+    .offset-1 {margin-left: 8.3333333%;}
+    .offset-2 {margin-left: 16.6666667%;}
+    .offset-3 {margin-left: 25.0%;}
+    .offset-4 {margin-left: 33.3333333%;}
+    .offset-5 {margin-left: 41.6666667%;}
+    .offset-6 {margin-left: 50.0%;}
+    .offset-7 {margin-left: 58.3333333%;}
+    .offset-8 {margin-left: 66.6666667%;}
+    .offset-9 {margin-left: 75.0%;}
+    .offset-10 {margin-left: 83.3333333%;}
+    .offset-11 {margin-left: 91.6666667%;}
+    .offset-12 {margin-left: 100%}
 
     .container {
         width: 80%;
@@ -719,7 +733,6 @@ label.on-top {
  */
 
 table {
-    border-radius: 6px;
     border-collapse: collapse;
     margin: 0 0 20px 0;
 }
