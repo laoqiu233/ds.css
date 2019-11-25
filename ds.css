@@ -74,6 +74,7 @@ h6 {
 [class*="col"] {
     float: left;
     width: 100%;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -118,6 +119,8 @@ h6 {
     .offset-10 {margin-left: 83.3333333%;}
     .offset-11 {margin-left: 91.6666667%;}
     .offset-12 {margin-left: 100%}
+
+    .offset-half {margin-left: 4.1666667%}
 
     .container {
         width: 80%;
@@ -219,7 +222,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     padding: 10px 30px;
     border: 1px solid #bbb;
     border-radius: 6px;
@@ -536,7 +539,7 @@ select {
     border: 1px solid #bbb;
     border-radius: 4px;
     padding: 8px 10px; 
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 
     box-sizing: border-box;
     transition: 0.15s;
@@ -824,4 +827,8 @@ pre {
 
 .u-no-bg {
     background: none;
+}
+
+.u-drop-shadow {
+    box-shadow: 0 10px 25px 5px rgba(77, 77, 77, 0.274)
 }
