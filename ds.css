@@ -132,7 +132,10 @@ h6 {
  */
 
 /* Black */
-.c-black {
+.c-black,
+input[type="submit"].c-black,
+input[type="reset"].c-black,
+input[type="button"].c-black {
     color: #222;
 }
 
@@ -141,7 +144,10 @@ h6 {
 }
 
 /* White */
-.c-white {
+.c-white,
+input[type="submit"].c-white,
+input[type="reset"].c-white,
+input[type="button"].c-white {
     color: #fff;
 }
 
@@ -159,7 +165,10 @@ h6 {
 }
 
 /* Blue */
-.c-blue {
+.c-blue,
+input[type="submit"].c-blue,
+input[type="reset"].c-blue,
+input[type="button"].c-blue {
     color: #3c88d7;
 }
 
@@ -168,7 +177,10 @@ h6 {
 }
 
 /* Purple */
-.c-purple {
+.c-purple,
+input[type="submit"].c-purple,
+input[type="reset"].c-purple,
+input[type="button"].c-purple {
     color: #a04daf;
 }
 
@@ -177,7 +189,10 @@ h6 {
 }
 
 /* Yellow */
-.c-yellow {
+.c-yellow,
+input[type="submit"].c-yellow,
+input[type="reset"].c-yellow,
+input[type="button"].c-yellow {
     color: #ffcf39;
 }
 
@@ -186,7 +201,10 @@ h6 {
 }
 
 /* Red */
-.c-red {
+.c-red,
+input[type="submit"].c-red,
+input[type="reset"].c-red,
+input[type="button"].c-red {
     color: #fa5b4a;
 }
 
@@ -195,7 +213,10 @@ h6 {
 }
 
 /* Green */
-.c-green {
+.c-green,
+input[type="submit"].c-green,
+input[type="reset"].c-green,
+input[type="button"].c-green {
     color: #78f758;
 }
 
